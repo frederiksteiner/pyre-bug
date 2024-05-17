@@ -1,0 +1,164 @@
+Versions
+========
+Client version: 0.9.21
+Binary version: None
+
+Configuration
+=============
+{
+  "global_root": "/home/fs/code/bug-pyre",
+  "dot_pyre_directory": "None",
+  "only_check_paths": [],
+  "excludes": [],
+  "extensions": [],
+  "ignore_all_errors": [],
+  "other_critical_files": [],
+  "search_path": [],
+  "optional_search_path": [],
+  "site_package_search_strategy": "all",
+  "site_roots": [],
+  "source_directories": [
+    "SimpleRawElement(root='/home/fs/code/bug-pyre/src')",
+    "SubdirectoryRawElement(root='/home/fs/code/bug-pyre', subdirectory='tests')"
+  ],
+  "strict": true,
+  "taint_models_path": [],
+  "use_buck2": false
+}
+
+Client Log
+==========
+2024-05-17 10:34:20,118 [PID 27089] INFO No binary specified, looking for `pyre.bin` in PATH
+2024-05-17 10:34:20,119 [PID 27089] INFO Pyre binary is located at `/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/bin/pyre.bin`
+2024-05-17 10:34:20,119 [PID 27089] INFO Could not determine the number of Pyre workers from configuration. Auto-set the value to 7.
+2024-05-17 10:34:20,120 [PID 27089] INFO No typeshed specified, looking for it...
+2024-05-17 10:34:20,120 [PID 27089] INFO Found: `/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed`
+2024-05-17 10:34:20,120 [PID 27089] INFO Writing arguments into /tmp/pyre_arguments_aw85m6yb.json...
+2024-05-17 10:34:20,120 [PID 27089] DEBUG Arguments:
+{
+  "source_paths": {
+    "kind": "simple",
+    "paths": [
+      "/home/fs/code/bug-pyre/src",
+      "/home/fs/code/bug-pyre$tests"
+    ]
+  },
+  "search_paths": [
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/python3.11/site-packages",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stdlib",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/ExifRead",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/Pillow",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/PyMySQL",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/PyYAML",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/aiofiles",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/boto",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/chevron",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/colorama",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/ldap3",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/mysqlclient",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/paramiko",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/psycopg2",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/pycurl",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/python-dateutil",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/pytz",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/regex",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/requests",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/retry",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/tqdm",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/ujson"
+  ],
+  "excludes": [],
+  "checked_directory_allowlist": [
+    "/home/fs/code/bug-pyre/tests",
+    "/home/fs/code/bug-pyre/src"
+  ],
+  "checked_directory_blocklist": [],
+  "extensions": [],
+  "log_path": "/home/fs/code/bug-pyre/.pyre",
+  "global_root": "/home/fs/code/bug-pyre",
+  "debug": true,
+  "python_version": {
+    "major": 3,
+    "minor": 11,
+    "micro": 9
+  },
+  "shared_memory": {},
+  "parallel": false,
+  "number_of_workers": 7,
+  "additional_logging_sections": [
+    "-progress"
+  ],
+  "show_error_traces": false,
+  "strict": true
+}
+2024-05-17 10:34:20,122 [PID 27089] ERROR Check command exited with non-zero return code: 1.
+
+
+Client Log
+==========
+2024-05-17 10:34:20,118 [PID 27089] INFO No binary specified, looking for `pyre.bin` in PATH
+2024-05-17 10:34:20,119 [PID 27089] INFO Pyre binary is located at `/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/bin/pyre.bin`
+2024-05-17 10:34:20,119 [PID 27089] INFO Could not determine the number of Pyre workers from configuration. Auto-set the value to 7.
+2024-05-17 10:34:20,120 [PID 27089] INFO No typeshed specified, looking for it...
+2024-05-17 10:34:20,120 [PID 27089] INFO Found: `/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed`
+2024-05-17 10:34:20,120 [PID 27089] INFO Writing arguments into /tmp/pyre_arguments_aw85m6yb.json...
+2024-05-17 10:34:20,120 [PID 27089] DEBUG Arguments:
+{
+  "source_paths": {
+    "kind": "simple",
+    "paths": [
+      "/home/fs/code/bug-pyre/src",
+      "/home/fs/code/bug-pyre$tests"
+    ]
+  },
+  "search_paths": [
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/python3.11/site-packages",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stdlib",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/ExifRead",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/Pillow",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/PyMySQL",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/PyYAML",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/aiofiles",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/boto",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/chevron",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/colorama",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/ldap3",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/mysqlclient",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/paramiko",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/psycopg2",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/pycurl",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/python-dateutil",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/pytz",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/regex",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/requests",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/retry",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/tqdm",
+    "/home/fs/.cache/pypoetry/virtualenvs/bug-pyre-9tZeV5hq-py3.11/lib/pyre_check/typeshed/stubs/ujson"
+  ],
+  "excludes": [],
+  "checked_directory_allowlist": [
+    "/home/fs/code/bug-pyre/tests",
+    "/home/fs/code/bug-pyre/src"
+  ],
+  "checked_directory_blocklist": [],
+  "extensions": [],
+  "log_path": "/home/fs/code/bug-pyre/.pyre",
+  "global_root": "/home/fs/code/bug-pyre",
+  "debug": true,
+  "python_version": {
+    "major": 3,
+    "minor": 11,
+    "micro": 9
+  },
+  "shared_memory": {},
+  "parallel": false,
+  "number_of_workers": 7,
+  "additional_logging_sections": [
+    "-progress"
+  ],
+  "show_error_traces": false,
+  "strict": true
+}
+2024-05-17 10:34:20,122 [PID 27089] ERROR Check command exited with non-zero return code: 1.
+
+

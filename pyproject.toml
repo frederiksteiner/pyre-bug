@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "bug-pyre"
+version = "0.1.0"
+description = ""
+authors = ["Frederik Steiner"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11, <3.12"
+
+[tool.poetry.dev-dependencies]
+black = "^24.0.0"                                   # The uncompromising code formatter.
+coverage = {extras = ["toml"], version = "^7.0.0"}  # Code coverage measurement for Python
+unittest-xml-reporting = "^3.2.0"                   # unittest-based test runner with Ant/JUnit like XML reporting.
+pre-commit = "^3.0.0"                              # A framework for managing and maintaining multi-language pre-commit hooks.
+pre-commit-hooks = "^4.2.0"                         # Some out-of-the-box hooks for pre-commit.
+pyre-check = "^0.9.15"                              # A performant type checker for Python
+pydocstyle = "^6.1.1"                               # Python docstring style checker
+pylint = "^3.0.0"                                  # python code static checker
+reorder-python-imports = "^3.1.0"                   # Tool for reordering python imports
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
